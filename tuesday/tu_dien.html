@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hii</title>
+</head>
+<body>
+
+    <p>Nhập từ:</p>
+    <input id="nhap" type="text">
+    <input type="button" value="Dịch" onclick="xuly()">
+    <p id="result"></p>
+    <script>
+        let el=['banana','apple'];
+        let tv=['chuoi','tao'];
+
+       function xuly(){
+            let val = document.getElementById("nhap").value;
+            for(let i = 0;i < el.length;i++){
+
+                if(el[i] === val){
+                val === tv[i];
+
+                document.getElementById("result").innerHTML=tv[i]
+                break;
+                } else
+                {
+                    document.getElementById("result").innerHTML=('không tìm thấy')
+                }
+            }
+
+       }
+
+    </script>
+
+</body>
+</html>
