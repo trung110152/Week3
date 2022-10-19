@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<script>
+  let a = +prompt('nhập cạnh a');
+  let b = +prompt('nhập cạnh b');
+  let c = +prompt('nhập cạnh c');
+  if (a===b && a===c ){
+      document.write('đây là tam giác đều')
+  }else if( (a===c && a!==b) || (a===b && a!==c)){
+      document.write('đây là tam giác cân')
+  }else
+  if ((a+b)>c && (b+c)>a && (c+a)>b){
+      document.write('đây là một tam giác')
+  }else
+  {
+      document.write('đây không phải tam giác')
+  }
+</script>
+</body>
+</html>
