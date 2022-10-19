@@ -10,13 +10,44 @@
   let n=+prompt('nhập số phần tử');// Nhập n là số phần tử
   let tong =0;
   for(i=0;i<n;i++){
-     arr[i]= +prompt('Nhập các phần tử: ');
-      document.write('phần tử '+i+ ' là '+ arr[i]+'<br>');
-      tong = tong +i;
+     arr[i]= +prompt('Nhập các phần tử: ');//nhập phần tử
+      document.write('phần tử '+i+ ' là '+ arr[i]+'<br>');//in pt
+      tong = tong + arr[i];
 
-  } document.write('tổng là: '+ tong)
-
-
+  } document.write('tổng là: '+ tong+'<br>')//in  tổng các pt
+  let tong2 = 0;//tin tông 2
+  for(i=0;i<n;i++){
+      if(arr[i]%5===2){
+          tong2 =tong2 + arr[i];
+      }
+  }document.write('tong 2 là '+tong2+'<br>');//tong các số chia 5 dư 2
+  let dem=0;
+  for(i=0;i<n;i++){
+      if(arr[i]%6===0) {
+          dem=dem +1;
+      }
+  }document.write('có '+ dem+ 'số chia hết cho 6'+'<br>');//số các số chia hết cho 6
+  let tbc;
+  let tong3=0;
+  let j=0;
+  for(i=0;i<n;i++){
+      if((arr[i]%4===3) && (arr[i]>10)){
+          j=j+1;
+          tong3=tong3 + arr[i];
+          tbc=tong3/j;
+      }
+  }document.write('tbc là '+tbc+'<br>')//tổng các số chia 4 dư 3
+  let max = 0;
+  let max2 =0;
+  for(i=0;i<n;i++){
+      if(max<arr[i]){
+          max=arr[i];
+      }
+      if(arr[i]%2===1 && max2<arr[i]){
+          max2=arr[i];
+      }
+  }document.write('số lớn nhất là'+max+'<br>');//tìm số lơn nhất
+  document.write('số lẻ lớn nhất là'+max2+'<br>');
 
 
 </script>
