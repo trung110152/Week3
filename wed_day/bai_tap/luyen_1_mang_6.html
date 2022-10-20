@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<script>
+  let arr=[];
+  let n=0;
+
+  for(let i=0;i<10;i++){
+    n++;
+    arr[i] = +prompt('nhập phần tử thứ '+n);
+  }
+  let v= +prompt('nhập v');
+  let b=0;
+  for(let i=0;i<10;i++) {
+    if (arr[i]===v) {
+        b++;
+      alert(v+" is in the array");
+      break;
+    }
+  }
+  if(b===0){
+      alert(v+" is not in the array");
+  }
+</script>
+</body>
+</html>
