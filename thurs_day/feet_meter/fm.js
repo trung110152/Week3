@@ -1,6 +1,6 @@
 function footToMeter(foot){
     let meter = 0.305 * foot;
-    alert(meter);
+    alert( foot + ' foot = ' + meter + 'meter');
 }
 function meterToFoot(meter){
     let  foot = 3.279 * meter;
