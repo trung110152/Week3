@@ -10,17 +10,13 @@
   let Constellation = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"]
   let a = prompt('nhập tên ngôi sao:')
   function findstar(a){
-      let n = 0;
       for(let i =0; i<star.length;i++){
           if(star[i]===a){
-              n++;
               alert(a +" thuộc chòm sao " +Constellation[i]);
-              break;
+              return;
           }
-      } if(n===0){
-          alert('không tìm thấy')
       }
-
+      return  alert('không tìm thấy');
   }
   findstar(a);
 </script>
