@@ -38,12 +38,27 @@ function binhphuong(x){
       snt.reverse().join();
       console.log(snt) ;
   }
+
   function tim_ky_tu() {
       let kytu = [];
       let n = +prompt('nhập sô phân tử của mảng ');
-      for (let i = 1; i <= n; i++) {
-          kytu[i] = +prompt('nhập phân tử ' + i);
+      for (let i = 1; i < n; i++) {
+          kytu[i] = prompt('nhập phân tử ' + i);
       }
+      let x = prompt('nhập ký tự cần tìm');
+      let dem = 0;
+      for (let j = 0; j < n; j++) {
+          if (kytu[j] === x) {
+              dem++;
+          }
+      }
+      alert(dem)
+
+  }
+
+  tim_ky_tu();
+
+
 
 
 
